@@ -39,6 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
+        android:id="@+id/FightMonstersFrame"
         android:layout_width="409dp"
         android:layout_height="621dp"
         app:layout_constraintBottom_toBottomOf="parent"
