@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public abstract class Monster {
     protected int maxLife;
     protected String name;
-    private int life;
+    protected int life;
 
     private ArrayList<Monster> monsters = new ArrayList<>();
     public Monster(int MaxLife, String Name) {
@@ -13,7 +13,10 @@ public abstract class Monster {
         name = Name;
     }
 
-    protected Monster() {
+    protected Monster(int MaxLife, String Name, int Life) {
+        maxLife = MaxLife;
+        name = Name;
+        life = life;
     }
 
     public void takeDamage(int damage) {
