@@ -1,9 +1,13 @@
 package com.example.viikko12;
 
+import java.util.ArrayList;
+
 public abstract class Monster {
-    private int maxLife;
-    private String name;
+    protected int maxLife;
+    protected String name;
     private int life;
+
+    private ArrayList<Monster> monsters = new ArrayList<>();
     public Monster(int MaxLife, String Name) {
         maxLife = MaxLife;
         name = Name;
@@ -27,4 +31,5 @@ public abstract class Monster {
     public int getMaxLife(){
         return maxLife;
     }
+
 }
