@@ -3,7 +3,7 @@ package com.example.viikko12;
 public class Player {
     private int damage;
     private int score;
-    public Player(int damage, int score) {
+    public Player() {
         this.damage = damage;
         this.score = score;
     }
