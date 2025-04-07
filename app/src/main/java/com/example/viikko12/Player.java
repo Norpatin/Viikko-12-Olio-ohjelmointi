@@ -4,8 +4,8 @@ public class Player {
     private int damage;
     private int score;
     public Player(int damage, int score) {
-        this.damage = 10;
-        this.score = 0;
+        this.damage = damage;
+        this.score = score;
     }
 
     public void attack(Monster name) {
